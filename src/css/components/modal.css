@@ -1,0 +1,28 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s all ease-in-out;
+}
+.modal.visible {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-cnt {
+  width: 60%;
+  height: 50vh;
+  transition: 0.3s all ease-in-out;
+  background-color: #fff;
+  overflow-y: auto;
+  position: relative;
+  padding: 24px;
+  padding-top: 40px;
+  border-radius: 4px;
+}
+.modal .fx-btn {
+  flex: 1;
+  border: none;
+}

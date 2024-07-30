@@ -1,0 +1,77 @@
+.stat {
+  width: 32%;
+  padding: 10px;
+  /* height: calc((100vw - 200px) * 0.25); */
+  border-radius: 10px;
+  background-color: white;
+}
+.stats {
+  width: 100% !important;
+  justify-content: space-between;
+}
+.bookings-stat {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.s-card {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+  flex-direction: column;
+}
+.stat:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  height: calc((100vw - 200px) * 0.25);
+}
+.stat .icon {
+  background-color: var(--accent);
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.s-card span {
+  font-size: 0.6em !important;
+}
+.stat .icon img {
+  width: 20px;
+}
+.g-cnt {
+  flex: 1;
+  padding: 10px;
+}
+.inp-rev {
+  justify-content: space-between;
+  align-items: center;
+}
+select {
+  padding: 3px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.inp-rev select:first-child {
+  margin-right: 10px;
+}
+.task-d {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.btn-add {
+  width: 100px !important;
+  height: 40px !important;
+}
+.trash svg {
+  width: 20px;
+  height: 20px;
+}
+.trash {
+  background: none;
+  border: none;
+  outline: none;
+}

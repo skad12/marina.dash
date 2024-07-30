@@ -1,0 +1,60 @@
+nav {
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #edebeb;
+  background-color: var(--primary);
+}
+.logo {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.logout {
+  background-color: var(--danger) !important;
+  margin-top: auto !important;
+  margin-bottom: 0px !important;
+}
+.link-btn {
+  text-decoration: none;
+}
+.link-btn button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  background-color: #a3874e;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.ico {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ico svg {
+  width: 18px;
+  height: 18px;
+}
+.link-btn:hover button,
+.link-btn.link-active button {
+  background-color: white;
+  color: var(--primary);
+}
+.link-btn:hover button .ico svg path,
+.link-btn.link-active button .ico svg path {
+  fill: var(--primary);
+}

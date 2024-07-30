@@ -1,0 +1,54 @@
+.table {
+  padding: 32px;
+  border: 1px solid #edebeb;
+  border-radius: 4px;
+  background-color: white;
+}
+.table .input {
+  width: 40%;
+}
+.table .input span {
+  top: 5px;
+}
+.table .input input {
+  z-index: 2;
+}
+.row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edebeb;
+  height: 50px;
+}
+.row .row-item {
+  flex: 1;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+.table-footer {
+  padding: 20px;
+}
+.count {
+  flex: unset !important;
+  width: 60px;
+}
+.table a {
+  color: var(--primary);
+}
+.fx-6 {
+  flex: 0.6 !important;
+}
+.fx-5 {
+  flex: 0.5 !important;
+}
+.table-footer .btn,
+.btn-submit {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content !important;
+}
+.fx-3 {
+  flex: 3 !important;
+}
+.tb-he {
+  width: 100%;
+  margin-bottom: 20px;
+}

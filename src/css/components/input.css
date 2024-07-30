@@ -1,0 +1,108 @@
+.input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  position: relative;
+  margin-bottom: 25px;
+  background-color: white;
+}
+.input input,
+.input button.s-btn {
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  z-index: 2;
+  background-color: transparent;
+  background: none;
+  font-size: 0.8em;
+}
+.input button.s-btn {
+  text-align: left;
+  width: 300px;
+  color: black;
+}
+.placeholder {
+  font-size: 0.8em;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  left: 4px;
+  transition: 0.3s all ease-in-out;
+}
+.placeholder.focused {
+  top: -10px;
+}
+.input .error {
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.input .error svg {
+  scale: 0.8;
+}
+
+.check-box {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #614f41;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch {
+  width: 40px;
+  height: 22px;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-rm {
+  background: none;
+  outline: none;
+}
+.switch div {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--gray-1);
+  transition: 0.3s all ease-in-out;
+  margin: 1px;
+}
+.switch.on div {
+  transform: translateX(100%);
+  background-color: white;
+}
+.switch.on {
+  background-color: var(--primary);
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputs .input {
+  width: 49%;
+}
+.selct-chv {
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
