@@ -10,25 +10,36 @@ import Bookings from "../../../components/table/active/Bookings";
 import Table from "../../../components/table/Table";
 import { colorPrimary, getFirstAndLastDateOfMonth } from "../../../utils";
 import Revenue from "../../../components/charts/Revenue";
+import DataContext from "../../../contexts/DataContext";
+import { useContext, useState } from "react";
 
-const Card = ({ title, svg }) => (
+const Card = ({ title, svg, value }) => (
   <div className="hover flex justify-center align-center s-card">
     <div className="icon">
       <img src={svg} alt={title} />
     </div>
-    <h2 className="t-primary">0</h2>
+    <h2 className="t-primary">{value}</h2>
     <span>{title}</span>
   </div>
 );
 
 function Dashboard(props) {
+  const { apartments } = useContext(DataContext);
   return (
     <div className="">
       <div className="stats flex">
         <div className="stat flex bookings-stat">
-          <Card svg={recent} title="Recent Bookings" />
-          <Card svg={available} title="Available Rooms" />
-          <Card svg={booked} title="Booked Rooms" />
+          <Card svg={recent} title="Total Bookings" value={apartments.length} />
+          <Card
+            svg={available}
+            title="Available Rooms"
+            value={apartments.filter((a) => a.available).length}
+          />
+          <Card
+            svg={booked}
+            title="Booked Rooms"
+            value={apartments.filter((a) => a.currentBooking).length}
+          />
           <Card svg={checkedIn} title="Checked-in Rooms" />
         </div>
         <Revenue />

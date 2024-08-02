@@ -43,6 +43,11 @@ export const labels = [
   "May",
   "June",
   "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 export const data = {
@@ -50,7 +55,7 @@ export const data = {
   datasets: [
     {
       label: "Dataset 1",
-      data: [10, 20, 30, 40, 50, 60, 70],
+      data: [10, 20, 30, 40, 50, 60, 70, 40, 30, 90, 25, 56],
       backgroundColor: "#0c3e83",
     },
   ],

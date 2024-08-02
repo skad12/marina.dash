@@ -27,6 +27,7 @@ const Apartment = ({ iname, id, iprice, active }) => {
   };
 
   return (
+    // popup add apartments
     <div>
       <Input placeholder="Apartment Name" value={name} onChange={setName} />
       <Input
